@@ -1,11 +1,83 @@
-input {
+input, button {
 	width: 100%;
 }
 
-.page {
-	display: none;
+input {
+  padding: 5px 10px;
+  margin: 5px 0;
 }
 
-#login {
-	display: block;
+h1, h2, h3 {
+  text-align: center;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  background: #eee;
+  color: #333;
+  border: 1px solid #666;
+  padding: 5px;
+  box-shadow: 1px 1px 2px #999;
+  cursor: pointer;
+}
+
+.comp-icon-holder{
+  position: relative;
+  clear: both;
+  min-height: 4em;
+}
+
+.comp-icon {
+  font-size: 4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.settings-holder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+}
+
+.icon-holder {
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #333;
+  color: #333;
+  margin-top: 10px;
+  padding: 5px 10px;
+  box-shadow: 3px 2px 7px rgba(221, 221, 221, 0.5);
+}
+
+.min-full-height {
+	min-height: 100vh;
+}
+
+.min-half-height {
+	min-height: 50vh;
+}
+
+.bottom-page {
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+	padding-bottom: 15px;
+}
+
+#settingsButton {
+  color: #333;
+}
+
+.client-img {
+  text-align: center;
+}
+
+.client-desc {
+  padding-top: 12px;
 }
