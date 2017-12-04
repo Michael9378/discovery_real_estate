@@ -7,6 +7,7 @@
   <title>Discovery Real Estate</title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 </head>
@@ -23,10 +24,9 @@
               <a class="button" href="home.html">Home</a>
             </div>
             <div class="col-xs-3 col-xs-push-1">
-              <a class="button">New</a>
             </div>
             <div class="col-xs-5 col-xs-push-1">
-              <a class="button">Contacts</a>
+              <a class="button">New</a>
             </div>
           </div>
         </div>
@@ -35,48 +35,14 @@
 
     <div class="row">
 
-      <div class="col-sm-6">
-        <div class="client card">
-          <div class="row">
-            <div class="col-xs-4 client-img">
-              <p></p>
-              <p>John Johnson</p>
-            </div>
-            <div class="col-xs-8 client-desc">
-              <p class="received"><strong>10:15</strong> Fridays after 2pm</p>
-              <!-- client info and contact month -->
-            </div>
-          </div>
-        </div>
+      <p></p>
+      <div class="col-sm-12">
+        <div id="datepicker"></div>
       </div>
-      
+
       <div class="col-sm-6">
         <div class="client card">
-          <div class="row">
-            <div class="col-xs-4 client-img">
-              <p></p>
-              <p>Dave Davidson</p>
-            </div>
-            <div class="col-xs-8 client-desc">
-              <p class="received"><strong>10:15</strong> I typically don't like to de...</p>
-              <!-- client info and contact month -->
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-sm-6">
-        <div class="client card">
-          <div class="row">
-            <div class="col-xs-4 client-img">
-              <p></p>
-              <p>Will Williams</p>
-            </div>
-            <div class="col-xs-8 client-desc">
-              <p class="received"><strong>10:15</strong> Perfect!</p>
-              <!-- client info and contact month -->
-            </div>
-          </div>
+          <h4>No Saved Meetings</h4>
         </div>
       </div>
 
@@ -87,6 +53,12 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" /></script>
+<script src="js/jquery-ui.js"></script>
 <script src="js/main.js" /></script>
+<script>
+$( "#datepicker" ).datepicker({
+  inline: true
+});
+</script>
 
 </html>

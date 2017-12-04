@@ -1,4 +1,4 @@
-input, button {
+input, button, textarea {
 	width: 100%;
 }
 
@@ -80,4 +80,8 @@ h1, h2, h3 {
 
 .client-desc {
   padding-top: 12px;
+}
+
+.ui-datepicker {
+  width: 100%;
 }
